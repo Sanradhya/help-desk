@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(Get-ChildItem)",
+      "Shell(git)",
+      "Shell(npm)",
+      "Read(src/**)",
+      "Read(prisma/**)",
+      "Read(*.json)",
+      "Read(*.js)",
+      "Read(*.ts)",
+      "Read(*.md)",
+      "Write(src/dummy-sites/**)"
+    ],
+    "deny": [
+      "Shell(rm)", "Shell(del)", "Shell(rd)", "Shell(rmdir)", "Shell(Remove-Item)",
+      "Shell(cat)", "Shell(type)", "Shell(Get-Content)", "Shell(gc)",
+      "Shell(curl)", "Shell(wget)", "Shell(Invoke-WebRequest)", "Shell(Invoke-RestMethod)", "Shell(iwr)", "Shell(irm)",
+      "Shell(node)", "Shell(npx)", "Shell(powershell)", "Shell(pwsh)", "Shell(cmd)", "Shell(bash)",
+      "Shell(docker)", "Shell(prisma)", "Shell(setx)",
+      "Shell(git:push*)", "Shell(git:merge*)", "Shell(git:reset*)", "Shell(git:rebase*)",
+      "Shell(git:clean*)", "Shell(git:remote*)", "Shell(git:branch -D*)",
+      "Shell(git:checkout main*)", "Shell(git:switch main*)",
+      "Shell(npm:install*)", "Shell(npm:i *)", "Shell(npm:ci*)", "Shell(npm:uninstall*)",
+      "Shell(npm:publish*)", "Shell(npm:exec*)", "Shell(npm:config*)",
+      "Read(.env*)", "Read(**/.env*)",
+      "Write(.env*)", "Write(**/.env*)", "Write(.cursor/**)", "Write(.git/**)",
+      "Write(package.json)", "Write(package-lock.json)", "Write(prisma/**)",
+      "Write(scripts/**)", "Write(jest.config.js)"
+    ]
+  }
+}
